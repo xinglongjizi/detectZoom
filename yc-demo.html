@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<style>
+    
+
+    #notice-page-scaled-wrapper{
+        position: fixed;
+        z-index: 9999;
+        top: 50%;
+        right: 0;
+        width: 450px;
+        height: 50px;
+        line-height: 50px;
+        background: #00aaf2;
+        border-radius: 8px; 
+        color: #fff;
+        text-align: center;
+        transform: translate(100%, -50%);
+        transition: all .3s ease-out;
+    }
+    #notice-page-scaled-wrapper.show{
+        transform: translate(0, -50%);
+    }
+
+
+</style>
+</head>
+<body>
+
+    <h2>缩放页面查看效果</h2>
+
+
+
+
+<script src="./jquery-1.9.1.min.js"></script>
+<script src="./jquery.detectZoom.js"></script>
+
+<div id="notice-page-scaled-wrapper">
+    您的网页处于缩放状态，请按 Ctrl+0 恢复到浏览器默认大小
+</div>
+
+</body>
+</html>
